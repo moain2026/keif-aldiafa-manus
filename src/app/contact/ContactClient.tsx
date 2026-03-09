@@ -48,7 +48,7 @@ export default function ContactClient() {
     <div>
       <Breadcrumbs />
       {/* HERO */}
-      <section className="relative pt-32 pb-16 px-4 overflow-hidden">
+      <section className="relative pt-6 pb-10 px-4 overflow-hidden">
         <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse at 50% 20%, rgba(184,134,11,0.08) 0%, transparent 60%)" }} />
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <motion.p initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-[#B8860B] mb-3" style={{ fontSize: "0.75rem", letterSpacing: "0.35em" }}>✦ تواصل معنا ✦</motion.p>

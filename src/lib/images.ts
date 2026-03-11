@@ -59,9 +59,15 @@ export const SERVICES_MALE = {
 };
 
 // ═══════════════════════════════════════════════════════════════
-// SERVICES — FEMALE (2 photos)
+// SERVICES — FEMALE
 // ═══════════════════════════════════════════════════════════════
 export const SERVICES_FEMALE = Array.from({ length: 2 }, (_, i) => `/images/services/female/female-${i + 1}.webp`);
+
+export const SERVICES_FEMALE_EXTENDED = {
+  hostesses: Array.from({ length: 2 }, (_, i) => `/images/services/female/hostesses/hostess-${i + 1}.webp`),
+  safarjiat: Array.from({ length: 2 }, (_, i) => `/images/services/female/safarjiat/safarjia-f-${i + 1}.webp`),
+  cleaning: Array.from({ length: 2 }, (_, i) => `/images/services/female/cleaning/cleaning-f-${i + 1}.webp`),
+};
 
 // ═══════════════════════════════════════════════════════════════
 // SERVICES — ARTISTIC

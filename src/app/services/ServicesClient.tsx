@@ -9,6 +9,7 @@ import {
   OUTFIT_IMAGES,
   SERVICES_MALE,
   SERVICES_FEMALE,
+  SERVICES_FEMALE_EXTENDED,
   SERVICES_ARTISTIC,
 } from "@/lib/images";
 
@@ -31,7 +32,42 @@ const categories: ServiceCategory[] = [
   {
     key: "female", label: "الخدمات النسائية", sublabel: "Female Hospitality", icon: "👩‍💼", color: "#D4A017",
     services: [
-      { id: "hostesses", title: "مضيفات", subtitle: "Female Hosts", img: SERVICE_IMAGES.hostess, description: "مضيفات محترفات بمظهر راقٍ وخدمة استثنائية لمناسباتكم النسائية.", features: ["مظهر أنيق وراقٍ", "خدمة احترافية", "تنسيق المناسبات", "استقبال VIP"], outfits: [{ name: "عباءة فاخرة", img: OUTFIT_IMAGES.female, desc: "عباءة مصممة خصيصاً" }] },
+      {
+        id: "hostesses",
+        title: "مضيفات",
+        subtitle: "Female Hosts",
+        img: SERVICES_FEMALE_EXTENDED.hostesses[0],
+        description: "مضيفات محترفات بمظهر راقٍ وخدمة استثنائية لمناسباتكم النسائية.",
+        features: ["مظهر أنيق وراقٍ", "خدمة احترافية", "تنسيق المناسبات", "استقبال VIP"],
+        outfits: [
+          { name: "عباءة فاخرة - 1", img: SERVICES_FEMALE_EXTENDED.hostesses[0], desc: "عباءة مصممة خصيصاً" },
+          { name: "عباءة فاخرة - 2", img: SERVICES_FEMALE_EXTENDED.hostesses[1], desc: "عباءة راقية بتصميم مميز" },
+        ],
+      },
+      {
+        id: "safarjiat",
+        title: "سفرجيات",
+        subtitle: "Female Butlers",
+        img: SERVICES_FEMALE_EXTENDED.safarjiat[0],
+        description: "سفرجيات محترفات يقدمن القهوة السعودية والشاي والتمر بأسلوب راقٍ للمناسبات النسائية.",
+        features: ["قهوة سعودية طازجة", "دلال فاخرة", "تمر وحلويات", "خدمة متواصلة"],
+        outfits: [
+          { name: "زي سفرجية - 1", img: SERVICES_FEMALE_EXTENDED.safarjiat[0], desc: "زي أنيق خاص بالسفرجيات" },
+          { name: "زي سفرجية - 2", img: SERVICES_FEMALE_EXTENDED.safarjiat[1], desc: "زي رسمي فاخر" },
+        ],
+      },
+      {
+        id: "cleaning-female",
+        title: "عاملات نظافة",
+        subtitle: "Cleaning Staff",
+        img: SERVICES_FEMALE_EXTENDED.cleaning[0],
+        description: "طاقم نظافة نسائي مدرب ومتخصص لضمان نظافة المكان طوال فترة المناسبة.",
+        features: ["تنظيف مستمر", "معدات حديثة", "فريق مدرب", "خدمة سريعة"],
+        outfits: [
+          { name: "زي عمل - 1", img: SERVICES_FEMALE_EXTENDED.cleaning[0], desc: "زي عمل أنيق ومريح" },
+          { name: "زي عمل - 2", img: SERVICES_FEMALE_EXTENDED.cleaning[1], desc: "زي عمل مميز" },
+        ],
+      },
     ],
   },
   {

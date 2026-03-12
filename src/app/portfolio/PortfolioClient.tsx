@@ -11,9 +11,7 @@ import {
   TEA_IMG as teaImg,
   EVENT_IMG as eventImg,
   WAITER_IMG as waiterImg,
-  EQUIP_IMG as equipImg,
   PORTFOLIO_IMG as portfolioImg,
-  KITCHEN_IMG as kitchenImg,
   DATES_IMG as datesImg,
   FOOD_IMG as foodImg,
 } from "@/lib/images";

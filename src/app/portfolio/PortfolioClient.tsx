@@ -20,7 +20,7 @@ import {
 
 const WA = "966508252134";
 
-type FilterType = "all" | "events" | "hospitality" | "food" | "behind";
+type FilterType = "all" | "occasions" | "events";
 
 interface Project {
   id: number;
@@ -32,26 +32,24 @@ interface Project {
 }
 
 const projects: Project[] = [
-  { id: 1, image: eventImg, title: "حفل زفاف فاخر", description: "ضيافة متكاملة لحفل زفاف ٣٠٠ ضيف بأرقى التقديمات", category: "events", tags: ["زفاف", "ضيافة", "فاخر"] },
-  { id: 2, image: coffeeImg, title: "القهوة السعودية الأصيلة", description: "تقديم القهوة السعودية بأسلوب تراثي في مؤتمر دولي", category: "hospitality", tags: ["قهوة", "تراث", "مؤتمر"] },
+  // المناسبات
+  { id: 1, image: eventImg, title: "حفل زفاف فاخر", description: "ضيافة متكاملة لحفل زفاف ٣٠٠ ضيف بأرقى التقديمات", category: "occasions", tags: ["زفاف", "ضيافة", "فاخر"] },
+  { id: 4, image: teaImg, title: "جلسة شاي ملكية", description: "جلسة شاي فاخرة بأفضل أنواع الشاي العالمي", category: "occasions", tags: ["شاي", "فاخر", "ملكي"] },
+  { id: 5, image: waiterImg, title: "حفل تخرج جامعي", description: "فريق مضيفين محترف لحفل تخرج بجامعة الملك سعود", category: "occasions", tags: ["تخرج", "جامعة", "احتفال"] },
+  { id: 8, image: portfolioImg, title: "حفل افتتاح مشروع", description: "ضيافة فاخرة لحفل افتتاح مشروع عقاري كبير", category: "occasions", tags: ["افتتاح", "عقاري", "فاخر"] },
+  { id: 12, image: coffeeImg, title: "ضيافة VIP", description: "ضيافة خاصة لكبار الضيوف في مناسبة خاصة", category: "occasions", tags: ["VIP", "مناسبة", "خاص"] },
+  // الفعاليات
   { id: 3, image: cateringImg, title: "مؤتمر الأعمال الدولي", description: "ضيافة كاملة لمؤتمر ٥٠٠ مشارك على مدار ثلاثة أيام", category: "events", tags: ["مؤتمر", "أعمال", "دولي"] },
-  { id: 4, image: teaImg, title: "جلسة شاي ملكية", description: "جلسة شاي فاخرة بأفضل أنواع الشاي العالمي", category: "hospitality", tags: ["شاي", "فاخر", "ملكي"] },
-  { id: 5, image: waiterImg, title: "حفل تخرج جامعي", description: "فريق مضيفين محترف لحفل تخرج بجامعة الملك سعود", category: "events", tags: ["تخرج", "جامعة", "احتفال"] },
-  { id: 6, image: datesImg, title: "تمور فاخرة محشوة", description: "تشكيلة تمور فاخرة محشوة بالمكسرات واللوز", category: "food", tags: ["تمور", "حلويات", "فاخر"] },
-  { id: 7, image: equipImg, title: "معدات التقديم", description: "أحدث معدات التقديم والتجهيز لمناسبة حكومية كبرى", category: "behind", tags: ["معدات", "تجهيز", "احترافي"] },
-  { id: 8, image: portfolioImg, title: "حفل افتتاح مشروع", description: "ضيافة فاخرة لحفل افتتاح مشروع عقاري كبير", category: "events", tags: ["افتتاح", "عقاري", "فاخر"] },
-  { id: 9, image: kitchenImg, title: "كواليس التحضير", description: "نظرة خلف الكواليس في مطبخنا المركزي", category: "behind", tags: ["كواليس", "تحضير", "جودة"] },
-  { id: 10, image: foodImg, title: "بوفيه متكامل", description: "تجهيز بوفيه فاخر متكامل بأصناف متنوعة", category: "food", tags: ["بوفيه", "متكامل", "أصناف"] },
+  { id: 2, image: coffeeImg, title: "ضيافة شركة أرامكو", description: "تقديم القهوة السعودية بأسلوب تراثي في فعالية شركة أرامكو", category: "events", tags: ["شركات", "قهوة", "فعالية"] },
   { id: 11, image: heroImg, title: "فعالية موسم الرياض", description: "مشاركتنا في تقديم ضيافة موسم الرياض الثالث", category: "events", tags: ["موسم", "رياض", "فعالية"] },
-  { id: 12, image: coffeeImg, title: "ضيافة VIP", description: "ضيافة خاصة لكبار الضيوف في مناسبة حكومية", category: "hospitality", tags: ["VIP", "حكومي", "خاص"] },
+  { id: 6, image: datesImg, title: "فعالية شركة سابك", description: "تجهيز ضيافة فاخرة لفعالية شركة سابك السنوية", category: "events", tags: ["شركات", "فعالية", "سنوية"] },
+  { id: 10, image: foodImg, title: "فعالية وزارة الطاقة", description: "تجهيز بوفيه فاخر لفعالية حكومية كبرى", category: "events", tags: ["حكومية", "فعالية", "فاخر"] },
 ];
 
 const filters: { key: FilterType; label: string; icon: string }[] = [
   { key: "all", label: "الكل", icon: "◎" },
-  { key: "events", label: "المناسبات", icon: "🎪" },
-  { key: "hospitality", label: "الضيافة", icon: "☕" },
-  { key: "food", label: "التقديمات", icon: "🍽" },
-  { key: "behind", label: "خلف الكواليس", icon: "🎬" },
+  { key: "occasions", label: "المناسبات", icon: "🎉" },
+  { key: "events", label: "الفعاليات", icon: "🏢" },
 ];
 
 function PortfolioItem({ project }: { project: Project }) {

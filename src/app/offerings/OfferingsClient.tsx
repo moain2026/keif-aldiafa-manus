@@ -45,10 +45,14 @@ const categories: CategoryData[] = [
   {
     id: "cold", label: "المشروبات الباردة", icon: "🧊", description: "مشروبات منعشة وباردة",
     items: [
-      { name: "عصائر طبيعية",  description: "عصائر فواكه طازجة متنوعة",          img: teaImg,    height: "medium" },
-      { name: "موهيتو",        description: "موهيتو منعش بنكهات متعددة",          img: teaImg,    height: "tall"   },
-      { name: "سموذي فواكه",   description: "سموذي طازج من أفضل الفواكه",         img: teaImg,    height: "short"  },
-      { name: "آيس لاتيه",     description: "لاتيه مثلج بنكهات مختلفة",           img: coffeeImg, height: "medium" },
+      { name: "عصائر طبيعية طازجة",       description: "عصائر فواكه طبيعية طازجة معصورة لحظتها",           img: "/images/cold-drinks/fresh-juice.webp",  height: "tall"   },
+      { name: "موهيتو بنكهات مختلفة",     description: "موهيتو منعش بنكهات متعددة مع النعناع الطازج",      img: "/images/cold-drinks/mojito.webp",      height: "medium" },
+      { name: "عرق سوس",                  description: "مشروب عرق السوس الأصيل المنعش والمفيد للصحة",       img: "/images/cold-drinks/arak-sous.webp",   height: "short"  },
+      { name: "كركديه",                   description: "شراب الكركديه الأحمر المنعش بطعمه الفريد",           img: "/images/cold-drinks/karkade.webp",     height: "tall"   },
+      { name: "تمر هندي",                 description: "شراب التمر الهندي الحامض المنعش بالنكهة الأصيلة",   img: "/images/cold-drinks/tamarind.webp",    height: "medium" },
+      { name: "سوبيا",                    description: "سوبيا بجوز الهند والقرفة مشروب تراثي سعودي أصيل",   img: "/images/cold-drinks/sobia.webp",       height: "short"  },
+      { name: "سموذي فواكه",              description: "سموذي طازج من أفضل الفواكه الموسمية",               img: "/images/cold-drinks/smoothie.webp",    height: "tall"   },
+      { name: "آيس لاتيه",               description: "لاتيه مثلج بنكهات مختلفة من أجود مطاحن القهوة",     img: "/images/cold-drinks/iced-latte.webp",  height: "medium" },
     ],
   },
   {

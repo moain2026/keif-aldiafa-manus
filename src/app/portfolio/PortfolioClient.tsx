@@ -194,16 +194,16 @@ function Lightbox({
             onDragEnd={handleDragEnd}
             className="rounded-3xl overflow-hidden cursor-grab active:cursor-grabbing select-none"
           >
-            <div className="relative overflow-hidden" style={{ maxHeight: "60vh" }}>
+            <div className="relative flex items-center justify-center" style={{ background: "rgba(0,0,0,0.3)" }}>
               <ImageWithFallback
                 src={project.image}
                 alt={project.title}
-                className="w-full object-cover"
+                className="w-full object-contain"
+                style={{ maxHeight: "50vh" }}
                 priority
               />
-              <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(10,8,2,0.85) 0%, transparent 50%)" }} />
               {/* تلميح السحب */}
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1 rounded-full text-[#F5F5DC]/40 text-xs"
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 px-3 py-1 rounded-full text-[#F5F5DC]/40 text-xs"
                 style={{ background: "rgba(0,0,0,0.4)", backdropFilter: "blur(8px)" }}>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-3.5 h-3.5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
